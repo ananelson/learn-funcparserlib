@@ -1,3 +1,7 @@
 .md|jinja|markdown|easyhtml:
+    - except: README
     - basic-tokenizing.py|idio|pycon|pyg
     - .py|idio
+
+static:
+    - README.md

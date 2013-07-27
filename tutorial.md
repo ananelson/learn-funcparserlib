@@ -47,7 +47,7 @@ And we use this in the `__unicode__` and `__str__` methods:
 
 We implement a `__repr__` method:
 
-{{ d['token_class.py|idio']['name'] }}
+{{ d['token_class.py|idio']['repr'] }}
 
 {{ d['test_token.py|idio']['test-repr'] }}
 
