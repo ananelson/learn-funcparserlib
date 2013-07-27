@@ -4,7 +4,7 @@ class Custom(OutputReporter):
     """
     Store output in separate gh-pages branch.
     """
-    aliases = ['custom']
+    aliases = ['output']
     _settings = {
             'dir' : '../learn-funcparserlib-output',
             'readme-filename' : None
