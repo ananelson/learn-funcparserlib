@@ -455,9 +455,9 @@ can be deciphered from the <code>tok_name</code> dict in the built-in
 </pre></div>
 
 <p>We implement a <code>__repr__</code> method:</p>
-<div class="highlight"><pre><a name="token_class.py-idio.html-1"></a>    <span class="nd">@property</span>
-<a name="token_class.py-idio.html-2"></a>    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="token_class.py-idio.html-3"></a>        <span class="k">return</span> <span class="n">tok_name</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">code</span><span class="p">]</span>
+<div class="highlight"><pre><a name="token_class.py-idio.html-1"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="token_class.py-idio.html-2"></a>        <span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">code</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">start</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">line</span><span class="p">)</span>
+<a name="token_class.py-idio.html-3"></a>        <span class="k">return</span> <span class="s">&quot;Token(</span><span class="si">%r</span><span class="s">, </span><span class="si">%r</span><span class="s">, </span><span class="si">%r</span><span class="s">, </span><span class="si">%r</span><span class="s">, </span><span class="si">%r</span><span class="s">)&quot;</span> <span class="o">%</span> <span class="n">args</span>
 </pre></div>
 
 <div class="highlight"><pre><a name="test_token.py-idio.html-1"></a><span class="k">def</span> <span class="nf">test_repr</span><span class="p">():</span>
