@@ -1,0 +1,4 @@
+reporter:output:
+    help: Store output in separate gh-pages branch.
+    dir: ../learn-funcparserlib-output
+    readme-filename: None
